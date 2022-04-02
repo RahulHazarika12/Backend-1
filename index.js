@@ -1,13 +1,15 @@
 import express from "express";
 import bodyParser from "body-parser"; //incoming post request bodies
+import usersRoutes from "./routes/users.js";
 
 const app = express();
 const PORT = 5000; //custom port
 
 app.use(bodyParser.json()); //using json data (js oject notation)
 
+app.use("/users", usersRoutes);
+
 app.get("/", (req, res) => {
-  console.log("[test]");
   res.send("Hello from homepage");
 });
 
