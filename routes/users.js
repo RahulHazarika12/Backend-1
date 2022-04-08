@@ -13,6 +13,11 @@ const users = [
     lastName: "Dane",
     age: 50,
   },
+  {
+    firstName: "Oxy",
+    lastName: "Dane",
+    age:97,
+  },
 ];
 
 //all routes here are starting with /users
